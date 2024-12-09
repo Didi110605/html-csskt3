@@ -1,0 +1,153 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+header {
+    background-color: rgb(189, 189, 66);
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ee9300; 
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; 
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+    color: #35424a;
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #dcdcdc; 
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+article h2 {
+    color: #35424a;
+}
+
+article p:first-of-type {
+    font-weight: bold; 
+}
+
+article p {
+    font-size: 15px; 
+    color: #000000;
+}
+
+article a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px; 
+    background: #35424a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s; 
+}
+
+article a:hover {
+    background: #48657a;
+}
+
+footer {
+    background-color: #c6ba35;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0; 
+}
+
+aside {
+    background: #e2e2e2;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+    margin-top: 0;
+}
+
+aside h3::after {
+    content: "✦"; 
+    margin-left: 5px;
+}
+
+@media (max-width: 900px) {
+    nav ul li {
+        display: block; 
+        margin: 10px 0;
+        text-align: center; 
+    }
+
+    main {
+        padding: 15px; 
+    }
+
+    article {
+        margin: 10px 0; 
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 20px; 
+    }
+
+    article p {
+        font-size: 14px; 
+    }
+
+    article a {
+        width: 100%; 
+        box-sizing: border-box;
+    }
+}
