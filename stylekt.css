@@ -19,11 +19,7 @@ header {
 nav {
     margin: 5px 0;
 }
-nav a {
-    letter-spacing: -0.5px;  /* Уменьшаем пространство между буквами */
-    word-spacing: -5px;      /* Уменьшаем пространство между словами */
 
-}
 nav ul {
     display: flex; /* Используем Flex для горизонтального отображения */
     list-style: none;
