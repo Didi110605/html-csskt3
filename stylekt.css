@@ -115,29 +115,33 @@ footer {
     padding: 15px 0; 
 }
 
-@media (min-width: 600px) {
-    main {
-        grid-template-columns: 2fr 1fr; 
+@media (max-width: 900px) {
+    nav ul li {
+        display: block; /* Переключение на блочный вид */
+        margin: 10px 0;
+        text-align: center; /* Центрирование навигации на мобильных устройствах */
     }
 
-    aside {
-        margin-left: 20px; 
+    main {
+        padding: 15px; /* Меньшие отступы на мобильных устройствах */
+    }
+
+    article {
+        margin: 10px 0; /* Уменьшение отступов между статьями */
     }
 }
 
 @media (max-width: 600px) {
     h2 {
-        font-size: 20px; 
+        font-size: 20px; /* Уменьшение размера заголовков */
     }
 
     article p {
-        font-size: 14px; 
+        font-size: 14px; /* Уменьшение размера шрифта статьи */
     }
 
     article a {
-        width: 100%; 
-        box-sizing: border-box; 
+        width: 100%; /* Кнопки на всю ширину для удобства клика */
+        box-sizing: border-box; /* Учет отступов в ширине */
     }
 }
-
-
