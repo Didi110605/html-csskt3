@@ -127,7 +127,7 @@ footer {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
     nav ul {
         flex-direction: column; /* На мобильных устройствах — вертикальное меню */
         align-items: center; /* Центрируем элементы */
