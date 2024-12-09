@@ -19,6 +19,7 @@ nav {
 }
 
 nav ul {
+    display: flex; /* Превращаем в flex-контейнер */
     flex-direction: row; /* По умолчанию горизонтальное меню */
     flex-wrap: wrap; /* Меню переносится на следующую строку при недостатке места */
     list-style: none;
