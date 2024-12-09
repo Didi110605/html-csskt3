@@ -115,19 +115,13 @@ footer {
     padding: 15px 0; 
 }
 
-@media (max-width: 900px) {
-    nav ul li {
-        display: block; /* Переключение на блочный вид */
-        margin: 5px 0;
-        text-align: center; /* Центрирование навигации на мобильных устройствах */
-    }
-
+@media (min-width: 600px) {
     main {
-        padding: 10px; /* Меньшие отступы на мобильных устройствах */
+        grid-template-columns: 2fr 1fr; /* Две колонки: основное содержимое и боковая панель */
     }
 
-    article {
-        margin: 10px 0; /* Уменьшение отступов между статьями */
+    aside {
+        margin-left: 20px; /* Отступы между основным содержимым и боковой панелью */
     }
 }
 
