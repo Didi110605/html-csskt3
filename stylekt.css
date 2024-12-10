@@ -149,17 +149,17 @@ footer {
         box-sizing: border-box; /* Учет отступов в ширине */
     }
 } 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     nav ul {
-        flex-direction: column; /* Делаем элементы навигации вертикальными */
-        align-items: center; /* Выравниваем элементы по центру */
+        flex-direction: column; /* Делаем меню вертикальным */
+        align-items: center;
     }
 
     nav ul li {
-        margin: 10px 0; /* Увеличиваем отступы между ссылками */
+        margin: 10px 0;
     }
 
     nav ul li a {
-        font-size: 16px; /* При необходимости меняем размер текста */
+        font-size: 16px; /* Корректировка размера текста */
     }
 }
