@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #000000;
+    overflow-x: hidden;
 }
 
 /* Заголовок */
@@ -18,12 +19,16 @@ header {
 /* Навигация */
 nav {
     margin: 5px 0;
+    max-width: 100%; /* Гарантируем, что навигационный блок будет вписываться в экран */
+    overflow-x: auto; /* В случае длинного содержимого делаем прокрутку */
+}
 }
 nav ul {
-    display: flex; /* Используем Flex для горизонтального отображения */
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос элементов на следующую строку */
     list-style: none;
     padding: 0;
-    justify-content: center; /* Центрируем навигацию */
+    justify-content: center;
 }
 
 nav ul li {
@@ -147,5 +152,24 @@ footer {
     article a {
         width: 100%; /* Кнопки на всю ширину для удобства клика */
         box-sizing: border-box; /* Учет отступов в ширине */
+    }
+}
+@media (max-width: 600px) {
+    nav ul li {
+        margin: 5px; /* Уменьшаем расстояние между пунктами */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Уменьшение размера текста в меню */
+    }
+}
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Делаем вертикальную навигацию */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Отступ между пунктами */
     }
 }
