@@ -20,15 +20,19 @@ nav {
     margin: 5px 0;
 }
 nav ul {
-    display: flex; /* Используем Flex для горизонтального отображения */
-    list-style: none;
+    display: flex; /* Используем Flexbox */
+    flex-direction: row; /* Горизонтальная ориентация */
+    list-style-type: none; /* Убираем маркеры */
+    justify-content: center; /* Центровка меню */
     padding: 0;
-    justify-content: center; /* Центрируем навигацию */
+    margin: 0;
 }
 
+/* Стили для элементов навигации */
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px; /* Расстояние между пунктами */
 }
+
 
 nav ul li a {
     color: #ffffff;
@@ -125,41 +129,13 @@ footer {
 }
 
 /* Медиазапросы */
-@media (min-width: 600px) {
-    main {
-        grid-template-columns: 2fr 1fr; /* Две колонки: основное содержимое и боковая панель */
-    }
-
-    aside {
-        margin-left: 20px; /* Отступы между основным содержимым и боковой панелью */
-    }
-}
-
 @media (max-width: 600px) {
-    h2 {
-        font-size: 20px; /* Уменьшение размера заголовков */
-    }
-
-    article p {
-        font-size: 14px; /* Уменьшение размера шрифта статьи */
-    }
-
-    article a {
-        width: 100%; /* Кнопки на всю ширину для удобства клика */
-        box-sizing: border-box; /* Учет отступов в ширине */
-    }
-} 
-@media only screen and (max-width: 600px) {
     nav ul {
         flex-direction: column; /* Делаем меню вертикальным */
-        align-items: center;
+        align-items: center; /* Центрируем пункты */
     }
 
     nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        font-size: 16px; /* Корректировка размера текста */
+        margin: 10px 0; /* Расстояние между пунктами */
     }
 }
